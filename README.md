@@ -6,6 +6,12 @@ pip install flask
 pip install git+https://github.com/pmarti/python-messaging.git
 ```
 
+## setting env variables
+set username and password as environment variables.
+```
+export SMS_GATEWAY_USER=username
+export SMS_GATEWAY_PASS=yourpassword
+```
 
 ## running on startup
 add following to `/etc/rc.local` file.

@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 def check_auth(username, password):
     """check username / pass"""
-    return username == "username" and password == "mypassword"
+    return username == os.environ["SMS_GATEWAY_USER"] and password == os.environ["SMS_GATEWAY_PASS"]
 
 
 def requires_auth(f):
